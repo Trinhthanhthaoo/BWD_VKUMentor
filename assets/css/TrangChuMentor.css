@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "IBM Plex Sans", sans-serif; /* Thay đổi font chữ nếu cần */
+}
+.img{
+    width: 1px;
+    height:1;
+    transform: translateY(-30px);
+    transform: translateX(-10px);
+}
+
+/* Container chính */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image:url(../img/bg.png);
+    background-position: center;
+}
+
+/* Phần header */
+.background .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.head .img {
+    width: 150px;
+    height: 150px;
+    padding: 0cm;
+}
+
+.head .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img__change{
+    width: 100%;
+    max-width: 1519px;
+    height: auto;
+    transform: translateY(-20px);
+}
+.button_container {
+    display: flex;
+    align-items: center;
+}
+.title, .small_title{
+    font-family: "UTM HelvetIns";
+    font-weight: bold;
+    font-size: large;
+    transform: translateY(-40px);
+}
+.title .title_1, .title_2, .title_3 {
+    padding-top: 9px;
+}
+.login-register {
+    display: flex; 
+}
+
+.login, .register {
+    padding: 10px 20px;
+    background: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212)); 
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    width: 4cm;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50px; 
+    margin-left: 10px; 
+    transform: translateY(-30px);
+}
+
+.login:hover, .register:hover, .DangKyMentor:hover {
+    opacity: 0.8;
+}
+
+/* Phần nội dung chính */
+.Content {
+    display: flex;
+    padding: 20px; 
+    justify-content: space-around;
+}
+.small_title{
+    transform: translateY(5px);
+}
+.title {
+    text-align: left;
+   width: 70%;
+   color: #fff; /* Màu chữ */
+   text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+
+
+.DangKyMentor button {
+    padding: 15px 25px;
+    background: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));
+    color: #fff;
+    border: 2px solid;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px; 
+    float: right;
+    transform: translateY(-50px);
+    font-weight: bolder;
+    
+}
+
+
+/* Phần hướng dẫn 4 bước */
+.DangKy .Instruct {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    
+    /* gap: 10px;  */ 
+
+}
+.DangKy .Instruct button {
+    padding:  20px 30px;
+    border: 2px solid;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 20px;
+    border-color:  linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));
+    width: 150px;   
+    height: auto; /* Đặt chiều cao của button là tự động để phù hợp với nội dung bên trong */
+    transform: translateY(-30px);
+}
+
+
+.Instruct p {
+    font-size: 14px;
+    margin-top: 5px;
+    
+}
+
+.Instruct hr {
+    /* border: none; */
+    height: 1px;
+    color: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));;
+    margin: 10px 0;
+}
+
+/* Phần tìm kiếm Mentor */
+.findmentor {
+    padding: 20px;
+    height: 210px;
+}
+
+
+
+.findmentor .find {
+    padding: 10px 20px;
+    background-color: black;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    transform: translate(1300px, 40px);
+}
+
+
+/* Phần hình ảnh VKU Mentor */
+.ImageVkuMentor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px; 
+}
+
+.ImageVkuMentor button {
+    border: none; 
+}
+
+.ImageVkuMentor img {
+    width: 100%; 
+    height: auto; 
+}
+.findmentor{
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap-reverse; 
+    flex-wrap:         wrap-reverse;
+    width: 1518.8px;
+    height: 120px;
+    background-color: #46a4d2;
+}
+.findmentor .EnterName {
+    height: 40px;
+    width: 500px;
+    transform: translate(10px,-50px);
+}
+    
+   
+
+.findmentor .title_1 {
+    height: 20px;
+    width: 400px;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    transform: translate(-350px, -25px);
+}
+.findmentor .Khoa{
+    width: 300px;
+    height: 40px;
+    transform: translateX(-517px);  
+
+}
+
+.findmentor .Ngành{
+    width: 300px;
+    height: 40px;
+    transform: translateX(-400px); 
+  
+ 
+}
+.findmentor .Môn{
+    width: 300px;
+    height: 40px;
+    transform: translateX(-300px); 
+  
+}
+@media only screen and (max-width: 900px) {  
+   .img__change{
+        width: 100%;
+        transform: translateY(-70px);
+    }
+    .container {
+        background-image: url(../img/bg.png);
+        background-position: center;
+        background-size: 700px 420px;
+    }
+    .Content {
+        display: block;
+        padding: 10px;
+    }
+    .login, .register {
+            padding: 10px 10px;
+            font-weight: 800;
+            font-size: 8px;
+            max-width: 1.7cm;
+            cursor: pointer;
+            margin-left: 10px; 
+            transform: translate(5px,-28px);
+           
+
+    }
+    
+    .head .img {
+        width: 90px;
+        height: 90px;
+        transform: translateY(-28px);
+    }
+    .title .title_1{
+        white-space: nowrap;
+        font-size: 10px;
+        font-weight: 50;
+        text-align: center;
+        transform: translate(-14px, -50px);
+        
+    }
+    
+     .title .title_2{
+        text-align: center;
+        font-size: 10px;
+        height: auto;
+        max-width: 100px;
+        font-weight: 50;
+        transform: translate(154px, -81px);
+        white-space: nowrap;
+    }
+    .title_3{
+        text-align: center;
+        font-size: 10px; 
+        font-weight: 50;
+        transform: translate(40px,-93px);
+    white-space: nowrap;
+    }
+
+    .small_title {
+        display: block;
+        align-items: center;
+        text-align: center;
+       justify-content: center;
+       position: absolute;  
+       width: 390px;
+       height: auto;
+        font-size: 11px;
+        transform: translateY(-90px);
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+   
+    .DangKyMentor button{
+        font-weight: 1300;
+        font-size: 8px;
+        max-width: auto;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        height: 0.8cm;
+        font-weight: 100;
+        font-size:9px;
+        transform: translate(-130px,90px);
+        font-weight: bolder;
+        
+    }
+    .DangKy .Instruct {
+        float: right;
+        transform: translateY(-15px);
+    }
+   .DangKy .Instruct button {
+    float: right;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    max-width: 120px ;
+    font-size: 10px;
+    height: auto;
+   }
+
+    .Instruct p {
+        font-size: 10px;
+    }
+    .findmentor .EnterName, .Khoa, .Môn, .Ngành {
+        max-width: 2cm;
+        max-height: 0.7cm;
+        font-size: 8px;
+    }
+    .findmentor {
+        max-width: 100%;
+        height: auto;
+    }
+
+}

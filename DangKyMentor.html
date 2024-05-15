@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Mentor</title>
+    <link rel="stylesheet" href="assets/css/DangKy.css">
+</head>
+<body>
+    <div class="wrapp">
+        <div class="header">
+            <div class="subject">
+                <h3>Đăng ký làm Mentor</h3>
+            </div>
+            <div class="title">
+                <p>
+                    Cảm ơn bạn đã đồng hành trở thành Mentor để cùng VKUMentor giúp đỡ nhiều sinh viên của VKU thành công hơn.<br>
+                    VKUMentor sẽ liên hệ với bạn qua email hoặc số điện thoại bạn cung cấp để tạo profile mentor và hướng dẫn các bước tham gia.<br>
+                    Hãy nhớ kiểm tra cả thư rác (SPAM) để tránh bỏ lỡ các thông báo từ VKUMentor!
+                </p>
+            </div>
+        </div>
+
+        <form action="index.php" method="POST">
+            <div class="container">
+                <div class="tttt-1024-form-group">
+                    <div class="form-group" > 
+                        <div class="label">Họ và Tên</div>
+                        <input type="text" placeholder="Nhập Họ và Tên" required>
+                        
+                    </div>
+                    <div class="form-group" > 
+                        <div class="label">Danh xưng</div>
+                        <select name="DanhXung" required>
+                            <option>Anh</option>
+                            <option>Chị</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="tttt-1024-form-group">
+                    <div class="form-group" > 
+                        <div class="label">Công việc/Vị trí</div>
+                        <input type="text" placeholder="Nhập công việc của bạn" required>
+
+                    </div>
+
+                    <div class="form-group" > 
+                    <div class="label" >Công ty/Tổ chức</div>
+                        <input type="text" placeholder="Nhập tên công ty" required>
+                    </div>
+                </div>
+
+                <div class="tttt-1024-form-group">
+                    <div class="form-group" > 
+                        <div class="label">Email</div>
+                        <input type="email" placeholder="example@gmail.com" required>
+
+                    </div>
+
+                    <div class="form-group" > 
+                        <div class="label" >Số điện thoại</div>                   
+                        <input type="number" placeholder="Nhập số điện thoại" min="0" required>
+                    </div>
+                </div>
+
+                <div class="tttt-1024-form-group">
+                    <div class="form-group"> 
+                        <div class="label">Link Facebook</div>
+<input type="url" placeholder="https://facebook.com/yourprofile">
+                    </div>
+
+                    <div class="form-group" >
+                        <div class="label"  >Zalo</div>
+                        <input type="number" placeholder="Nhập số Zalo của bạn">
+                    </div>
+                </div>
+
+                <div class="tttt-1024-form-group">
+                    <div class="form-group"> 
+                        <div class="label">Chuyên môn</div>
+                        <input type="text" placeholder="Nhập chuyên môn của bạn" required>
+
+                    </div>
+
+                    <div class="form-group" >
+                        <div class="label"  >Tổ chức</div> 
+                        <input type="text" placeholder="Nhập tên tổ chức">
+                    </div>
+                </div>
+
+                <div class="tttt-1024-form-group">
+                    <div class="form-group">
+                        <div class="label">Địa điểm</div>
+                        <input type="text" placeholder="Nhập địa điểm của bạn">
+
+                    </div>
+
+                    <div class="form-group"> 
+                        <div class="label"  >Link LinkedIn</div>
+                        <input type="url" placeholder="https://linkedin.com/yourprofile">
+                    </div>
+                </div>
+
+                <div class="tttt-1024-form-group">
+                    <div class="form-group" > 
+                        <div class="label">Upload ảnh chân dung</div>
+                        <input type="file" name="portrait" accept="image/*">                  
+                    </div>
+
+                    <div class="form-group" > 
+                        <div class="label" >CV</div>
+                        <input type="file" name="cv" accept="application/pdf">
+                    </div>
+                </div>
+
+                <div class="tttt-1024-form-group">
+                    <div class="form-group" > 
+                        <div class="label">Bạn biết VKUMentor qua</div>
+                        <input type="text" placeholder="Bạn biết VKUMentor qua ai?">
+                    </div>
+
+                    <div class="form-group" > 
+                        <div class="label">Câu hỏi góp ý</div>
+                        <input type="text" placeholder="Bạn có câu hỏi hoặc góp ý nào?">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="label">Một số thành tựu</div>
+                    <input type="text">
+                </div>
+                <div class="footer">
+                    <button type="submit">Hoàn thành</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
