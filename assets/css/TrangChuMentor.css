@@ -238,6 +238,91 @@ body {
     transform: translateX(-300px); 
   
 }
+#tong {
+  position: absolute;
+  width: 100%;
+}
+.overlay-container {
+  position: absolute;
+  left: 0;
+  transform: translateX(30%);
+  top: 100px;
+  overflow: hidden;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  display: none;
+}
+
+.ImageVkuMentor img:hover {
+  transform: scale(1.2);
+}
+@font-face {
+  font-family: fontBWD;
+  src: url(../font/00119-UTM-HelvetIns/00119-UTM-HelvetIns.ttf);
+}
+.footer {
+  width: auto;
+  height: auto;
+  background-color: #bcb5ff;
+  color: whitesmoke;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: fontBWD;
+  text-align: center;
+}
+.footer_content {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  text-align: left;
+}
+.footer__logo {
+  width: 256px;
+  margin-top: -32px;
+  margin-bottom: -32px;
+}
+.footer p {
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+.footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  line-height: 3;
+}
+.footer li {
+  list-style: none;
+}
+.footer__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icon li {
+  font-size: 64px;
+  margin-top: -64px;
+  margin-right: 32px;
+  list-style: none;
+}
+@media (max-width: 739px) {
+  .footer {
+    text-align: center;
+  }
+  .footer_content {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .footer {
+    text-align: center;
+  }
+  .footer__icon li {
+    font-size: 32px;
+    margin-top: 0px;
+  }
+}
+
 @media only screen and (max-width: 900px) {  
    .img__change{
         width: 100%;
