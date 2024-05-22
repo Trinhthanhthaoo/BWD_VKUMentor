@@ -5,177 +5,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
     <link rel="stylesheet" href="./assets/css/TrangchuMentor.css" />
+    <link rel="stylesheet" src="./trangchu.js" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
   <body>
-    <div id="tong">
-      <div class="container">
-        <div class="background">
-          <div class="head">
-            <div class="img">
-              <img src="./assets/img/logo.png" alt="Logo" />
+    <div class="container">
+      <div class="background">
+        <div id="header">
+          <div class="navbar">
+            <div class="logo">
+              <a href="./TrangChuMentor.html"
+                ><img src="./assets/img/logo.png" alt=""
+              /></a>
             </div>
-            <div class="button_container">
-              <div class="login-register">
-                <button class="login btn__dangNhap">
-                  <a href="Login.html">LOGIN</a>
-                </button>
-              </div>
+
+            <ul class="links">
+              <a href=""><li>Trang chủ</li></a>
+              <a href=""><li>Đăng ký Mentor</li></a>
+              <a href=""><li>Tìm kiếm Mentor</li></a>
+              <a href=""><li>Cộng đồng</li></a>
+              <a href=""><li>Đánh giá</li></a>
+              <a href=""><li>Liên Hệ</li></a>
+            </ul>
+            <a class="action_btn" href="./Login.html"> Get Started </a>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- Dropnav -->
+            <div class="dropdown_menu open">
+              <li>
+                <a href="./TrangChuMentor.html"
+                  ><img class="logo__header" src="./assets/img/logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""><li>Trang chủ</li></a>
+              </li>
+              <li>
+                <a href=""><li>Đăng ký Mentor</li></a>
+              </li>
+              <li>
+                <a href=""><li>Tìm kiếm Mentor</li></a>
+              </li>
+              <li>
+                <a href=""><li>Cộng đồng</li></a>
+              </li>
+              <li>
+                <a href=""><li>Đánh giá</li></a>
+              </li>
+              <li>
+                <a href=""><li>Liên Hệ</li></a>
+              </li>
+              <li>
+                <a class="action_btn2" href="./Login.html"> Get Started </a>
+              </li>
             </div>
           </div>
+        </div>
 
-          <img class="img__change" src="./assets/img/GIF (1).gif" alt="" />
+        <img class="img__change" src="./assets/img/GIF (1).gif" alt="" />
 
-          <div class="Content">
-            <div class="title">
+        <div class="Content">
+          <div class="title">
+            <div class="title1_2">
               <div class="title_1"><h2>CỘNG ĐỒNG</h2></div>
-
+              <div class="DangKyMentor">
+                <button>ĐĂNG KÝ LÀM MENTOR</button>
+              </div>
               <div class="container__title">
                 <div class="title_2"><h2>CỐ VẤN (MENTOR)</h2></div>
-
-                <div class="DangKyMentor">
-                  <button>ĐĂNG KÝ LÀM MENTOR</button>
+                <div class="title_3">
+                  <h2>CHO SINH VIÊN VKU - HOÀN TOÀN MIỄN PHÍ</h2>
                 </div>
-              </div>
-
-              <div class="title_3">
-                <h2>CHO SINH VIÊN VKU - HOÀN TOÀN MIỄN PHÍ</h2>
-              </div>
-
-              <div class="small_title">
-                <h4>
-                  Kết nối và học hỏi kinh nghiệm các lĩnh vực Khoa học máy tính,
-                  Kỹ thuật điện tử, Kinh tế số và Thương mại điện tử và các hoạt
-                  động khác từ những người đi trước. Những cố vấn (Mentor) là
-                  giảng viên hoặc các sinh viên năm trước có kinh nghiệm, đạt
-                  GPA cao ở những môn mà sinh viên cần thiết...luôn sẵn sàng hỗ
-                  trợ sinh viên VKU phát triển.
-                </h4>
               </div>
             </div>
 
-            <div class="DangKy">
-              <div class="Instruct">
-                <button>
-                  Bước 1
-                  <hr />
-                  <p>Chuẩn bị cho mình một CV</p>
-                </button>
-                <button>
-                  Bước 2
-                  <hr />
-                  <p>Chọn Mentor phù hợp với bản thân</p>
-                </button>
-                <button>
-                  Bước 3
-                  <hr />
-                  <p>Đăng ký làm Mentee của Mentor đó</p>
-                </button>
-                <button>
-                  Bước 4
-                  <hr />
-                  <p>Bắt đầu quá trình học tập cùng Mentor</p>
-                </button>
-              </div>
+            <div class="small_title">
+              <h4>
+                Kết nối và học hỏi kinh nghiệm các lĩnh vực Khoa học máy tính,
+                Kỹ thuật điện tử, Kinh tế số và Thương mại điện tử và các hoạt
+                động khác từ những người đi trước. Những cố vấn (Mentor) là
+                giảng viên hoặc các sinh viên năm trước có kinh nghiệm, đạt GPA
+                cao ở những môn mà sinh viên cần thiết...luôn sẵn sàng hỗ trợ
+                sinh viên VKU phát triển.
+              </h4>
+            </div>
+          </div>
+
+          <div class="DangKy">
+            <div class="Instruct">
+              <button>
+                Bước 1
+                <hr />
+                <p>Chuẩn bị cho mình một CV</p>
+              </button>
+              <button>
+                Bước 2
+                <hr />
+                <p>Chọn Mentor phù hợp với bản thân</p>
+              </button>
+              <button>
+                Bước 3
+                <hr />
+                <p>Đăng ký làm Mentee của Mentor đó</p>
+              </button>
+              <button>
+                Bước 4
+                <hr />
+                <p>Bắt đầu quá trình học tập cùng Mentor</p>
+              </button>
+            </div>
+            <div class="DangKyMentor ipad">
+              <button>ĐĂNG KÝ LÀM MENTOR</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="findmentor">
+    <div class="findmentor">
+      <div class="find__mentor__text">
+        <p class="title_4">Tìm kiếm Mentor</p>
         <input type="text" class="EnterName" placeholder="Nhập tên Mentor" />
-        <!-- <input type="text" placeholder="Khoa"> -->
-        <select name="Khoa" id="Khoa" class="Khoa">
-          <option value="Khoa">Chọn Khoa</option>
-          <option value="Khoa học máy tính">Khoa học máy tính</option>
-          <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
-          <option value="Kinh tế số và thương mại">
-            Kinh tế số và Thương mại
-          </option>
-        </select>
-        <!-- <input type="text" placeholder="Ngành">  -->
-        <select name="Ngành" id="Ngành" class="Ngành">
-          <option value="Ngành">Chọn Ngành</option>
-          <option value="Khoa học máy tính">Khoa học máy tính</option>
-          <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
-          <option value="Kinh tế số và thương mại">
-            Kinh tế số và Thương mại
-          </option>
-        </select>
-        <!-- <input type="text" placeholder="Môn"> -->
-        <select name="Môn" id="Môn" class="Môn">
-          <option value="Môn">Chọn Môn</option>
-          <option value="Khoa học máy tính">Khoa học máy tính</option>
-          <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
-          <option value="Kinh tế số và thương mại">
-            Kinh tế số và Thương mại
-          </option>
-        </select>
-        <button class="find">Tìm kiếm</button>
-        <p class="title_1">Tìm kiếm Mentor</p>
       </div>
-      <div>
-        <iframe
-          class="overlay-container"
-          src="DangKyMentor.html"
-          width="950"
-          height="950px"
-        >
-        </iframe>
+      <!-- <input type="text" placeholder="Khoa"> -->
+      <select name="Khoa" id="Khoa" class="Khoa">
+        <option value="Khoa">Chọn Khoa</option>
+        <option value="Khoa học máy tính">Khoa học máy tính</option>
+        <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
+        <option value="Kinh tế số và thương mại">
+          Kinh tế số và Thương mại
+        </option>
+      </select>
+
+      <!-- <input type="text" placeholder="Ngành">  -->
+      <select name="Ngành" id="Ngành" class="Ngành">
+        <option value="Ngành">Chọn Ngành</option>
+        <option value="Khoa học máy tính">Khoa học máy tính</option>
+        <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
+        <option value="Kinh tế số và thương mại">
+          Kinh tế số và Thương mại
+        </option>
+      </select>
+      <!-- <input type="text" placeholder="Môn"> -->
+      <select name="Môn" id="Môn" class="Môn">
+        <option value="Môn">Chọn Môn</option>
+        <option value="Khoa học máy tính">Khoa học máy tính</option>
+        <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
+        <option value="Kinh tế số và thương mại">
+          Kinh tế số và Thương mại
+        </option>
+      </select>
+      <button class="find">Tìm kiếm</button>
+    </div>
+
+    <div>
+      <div class="ImageVkuMentor">
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
+        <button><img src="./assets/img/VKUMentor.png" alt="" /></button>
       </div>
-      <div>
-        <div class="ImageVkuMentor">
-          <button>
-            <a href="ThongtinMentor_TTTT0803.html" target="_blank"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="ThongTinMentor_TVAV.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="ThongtinMentor_HDN.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="./thongTinMentor.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="./thongTinMentor.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="./thongTinMentor.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="./thongTinMentor.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="./thongTinMentor.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
-          <button>
-            <a href="./thongTinMentor.html"
-              ><img src="./assets/img/VKUMentor.png" alt=""
-            /></a>
-          </button>
+    </div>
+    <div id="map">
+      <!-- <img
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7333963918245!2d108.24978007447882!3d15.975293084690627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1715835773537!5m2!1svi!2s"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          alt="map"
+          class="map"
+        /> -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7333963918245!2d108.24978007447882!3d15.975293084690627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1715835773537!5m2!1svi!2s"
+        style="border: 0; width: 100%; height: 300px"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="footer">
+      <img class="footer__logo" src="./assets/img/logo.png" alt="" />
+      <div class="footer_content">
+        <div class="footer__Mentor">
+          <p>VKU MENTOR</p>
+          <ul>
+            <a href=""><li>ĐIỀU KHOẢN BẢO MẬT</li></a
+            ><a href=""><li>ĐIỀU KHOẢN CHUNG</li></a
+            ><a href=""><li>CAM KẾT HOẠT ĐỘNG</li></a>
+          </ul>
+        </div>
+        <div class="footer__GioiThieu">
+          <p>GIỚI THIỆU</p>
+          <ul>
+            <a href=""><li>VỀ CHÚNG TÔI</li></a
+            ><a href=""><li>TUYỂN DỤNG</li></a>
+          </ul>
+        </div>
+        <div class="footer__HoTro">
+          <p>HỖ TRỢ</p>
+          <ul>
+            <a href=""><li>LIÊN HỆ GÓP Ý</li></a
+            ><a href=""><li>HỢP TÁC</li></a>
+          </ul>
+        </div>
+        <div class="footer__KetNoi">
+          <p>KẾT NỐI</p>
+          <ul class="footer__icon">
+            <a href=""
+              ><li><i class="fa-brands fa-facebook"></i></li
+            ></a>
+            <a href="">
+              <li><i class="fa-brands fa-linkedin-in"></i></li
+            ></a>
+          </ul>
         </div>
       </div>
-       <script type="text/javascript">
+    </div>
+    <script type="text/javascript">
       var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
       (function () {
@@ -188,62 +243,6 @@
         s0.parentNode.insertBefore(s1, s0);
       })();
     </script>
-      <div id="map">
-        <!-- <img
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7333963918245!2d108.24978007447882!3d15.975293084690627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1715835773537!5m2!1svi!2s"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          alt="map"
-          class="map"
-        /> -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7333963918245!2d108.24978007447882!3d15.975293084690627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1715835773537!5m2!1svi!2s"
-          style="border: 0; width: 100%; height: 300px"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <div class="footer">
-        <img class="footer__logo" src="./assets/img/logo.png" alt="" />
-        <div class="footer_content">
-          <div class="footer__Mentor">
-            <p>VKU MENTOR</p>
-            <ul>
-              <a href=""><li>ĐIỀU KHOẢN BẢO MẬT</li></a
-              ><a href=""><li>ĐIỀU KHOẢN CHUNG</li></a
-              ><a href=""><li>CAM KẾT HOẠT ĐỘNG</li></a>
-            </ul>
-          </div>
-          <div class="footer__GioiThieu">
-            <p>GIỚI THIỆU</p>
-            <ul>
-              <a href=""><li>VỀ CHÚNG TÔI</li></a
-              ><a href=""><li>TUYỂN DỤNG</li></a>
-            </ul>
-          </div>
-          <div class="footer__HoTro">
-            <p>HỖ TRỢ</p>
-            <ul>
-              <a href=""><li>LIÊN HỆ GÓP Ý</li></a
-              ><a href=""><li>HỢP TÁC</li></a>
-            </ul>
-          </div>
-          <div class="footer__KetNoi">
-            <p>KẾT NỐI</p>
-            <ul class="footer__icon">
-              <a href=""
-                ><li><i class="fa-brands fa-facebook"></i></li
-              ></a>
-              <a href="">
-                <li><i class="fa-brands fa-linkedin-in"></i></li
-              ></a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="Javascript/js.js"></script>
   </body>
+  <script src="./Javascript/js.js"></script>
 </html>

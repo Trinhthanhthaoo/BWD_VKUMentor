@@ -1,265 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
-    font-family: "IBM Plex Sans", sans-serif; /* Thay đổi font chữ nếu cần */
-}
-.img{
-    width: 1px;
-    height:1;
-    transform: translateY(-30px);
-    transform: translateX(-10px);
-}
-
-/* Container chính */
-.container {
-    display: flex;
-    flex-direction: column;
-    background-image:url(../img/bg.png);
-    background-position: center;
-}
-
-/* Phần header */
-.background .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.head .img {
-    width: 150px;
-    height: 150px;
-    padding: 0cm;
-}
-
-.head .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.img__change{
-    width: 100%;
-    max-width: 1519px;
-    height: auto;
-    transform: translateY(-20px);
-}
-.button_container {
-    display: flex;
-    align-items: center;
-}
-.title, .small_title{
-    font-family: "UTM HelvetIns";
-    font-weight: bold;
-    font-size: large;
-    transform: translateY(-40px);
-}
-.title .title_1, .title_2, .title_3 {
-    padding-top: 9px;
-}
-.login-register {
-    display: flex; 
-}
-
-.login, .register {
-    padding: 10px 20px;
-    background: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212)); 
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    width: 4cm;
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 50px; 
-    margin-left: 10px; 
-    transform: translateY(-30px);
-}
-
-.login:hover, .register:hover, .DangKyMentor:hover {
-    opacity: 0.8;
-}
-
-/* Phần nội dung chính */
-.Content {
-    display: flex;
-    padding: 20px; 
-    justify-content: space-around;
-}
-.small_title{
-    transform: translateY(5px);
-}
-.title {
-    text-align: left;
-   width: 70%;
-   color: #fff; /* Màu chữ */
-   text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-}
-
-
-
-.DangKyMentor button {
-    padding: 15px 25px;
-    background: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));
-    color: #fff;
-    border: 2px solid;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 40px; 
-    float: right;
-    transform: translateY(-50px);
-    font-weight: bolder;
-    
-}
-
-
-/* Phần hướng dẫn 4 bước */
-.DangKy .Instruct {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    
-    /* gap: 10px;  */ 
-
-}
-.DangKy .Instruct button {
-    padding:  20px 30px;
-    border: 2px solid;
-    background-color: #fff;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 20px;
-    border-color:  linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));
-    width: 150px;   
-    height: auto; /* Đặt chiều cao của button là tự động để phù hợp với nội dung bên trong */
-    transform: translateY(-30px);
-}
-
-
-.Instruct p {
-    font-size: 14px;
-    margin-top: 5px;
-    
-}
-
-.Instruct hr {
-    /* border: none; */
-    height: 1px;
-    color: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));;
-    margin: 10px 0;
-}
-
-/* Phần tìm kiếm Mentor */
-.findmentor {
-    padding: 20px;
-    height: 210px;
-}
-
-
-
-.findmentor .find {
-    padding: 10px 20px;
-    background-color: black;
-    color: white; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    float: left;
-    transform: translate(1300px, 40px);
-}
-
-
-/* Phần hình ảnh VKU Mentor */
-.ImageVkuMentor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px 20px; 
-}
-
-.ImageVkuMentor button {
-    border: none; 
-}
-
-.ImageVkuMentor img {
-    width: 100%; 
-    height: auto; 
-}
-.findmentor{
-    display: flex;
-    justify-content: space-between;
-    -webkit-flex-wrap: wrap-reverse; 
-    flex-wrap:         wrap-reverse;
-    width: 1518.8px;
-    height: 120px;
-    background-color: #46a4d2;
-}
-.findmentor .EnterName {
-    height: 40px;
-    width: 500px;
-    transform: translate(10px,-50px);
-}
-    
-   
-
-.findmentor .title_1 {
-    height: 20px;
-    width: 400px;
-    color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bold;
-    transform: translate(-350px, -25px);
-}
-.findmentor .Khoa{
-    width: 300px;
-    height: 40px;
-    transform: translateX(-517px);  
-
-}
-
-.findmentor .Ngành{
-    width: 300px;
-    height: 40px;
-    transform: translateX(-400px); 
-  
- 
-}
-.findmentor .Môn{
-    width: 300px;
-    height: 40px;
-    transform: translateX(-300px); 
-  
-}
-#tong {
-  position: absolute;
-  width: 100%;
-}
-.overlay-container {
-  position: absolute;
-  left: 0;
-  transform: translateX(30%);
-  top: 100px;
-  overflow: hidden;
-  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  display: none;
-}
-
-.ImageVkuMentor img:hover {
-  transform: scale(1.2);
 }
 @font-face {
   font-family: fontBWD;
   src: url(../font/00119-UTM-HelvetIns/00119-UTM-HelvetIns.ttf);
+
+  font-family: fontVKU;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 }
+
+body {
+  background-color: #fff;
+  font-family: "IBM Plex Sans", sans-serif; /* Thay đổi font chữ nếu cần */
+}
+.container .background .head .img {
+  width: auto;
+  height: 3cm;
+}
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: fontBWD;
+}
+.navbar a:hover {
+  color: #46a4d2;
+}
+#header {
+  position: relative;
+  padding: 0 2rem;
+  font-family: fontBWD;
+}
+.navbar {
+  background-color: whitesmoke;
+   opacity: 0.8; 
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -32px;
+}
+.navbar .logo img {
+  width: 160px;
+  margin-top: 10px;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+.navbar .toggle_btn {
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.action_btn {
+  background-image: linear-gradient(
+    180deg,
+    rgb(22, 167, 239),
+    rgb(148, 45, 212)
+  );
+  color: whitesmoke !important;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem !important;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+  margin-right: 32px;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  opacity: 0.8;
+}
+.action_btn:active {
+  scale: 0.95;
+}
+.action_btn2 {
+  background-image: linear-gradient(
+    180deg,
+    rgb(22, 167, 239),
+    rgb(148, 45, 212)
+  );
+  color: whitesmoke !important;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem !important;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn2:hover {
+  scale: 1.05;
+  opacity: 0.8;
+}
+.action_btn2:active {
+  scale: 0.95;
+}
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  height: 0px;
+  top: 60px;
+  width: 400px;
+  background-color: rgb(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.open {
+  height: 550px;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu .action_btn2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo__header {
+  width: 128px;
+  margin-bottom: -64px;
+  margin-left: 32px;
+}
+/* Container chính */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/bg.png);
+  background-position: center;
+}
+
+/* Phần header */
+.background .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.head .img {
+  width: 150px;
+  height: 150px;
+  padding: 0cm;
+}
+
+.head .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img__change {
+  width: 100%;
+  height: 200px;
+  margin-top: 120px;
+  margin-bottom: 78px;
+}
+.button_container {
+  display: flex;
+  align-items: center;
+}
+
+.login-register {
+  display: flex;
+}
+.login:hover,
+.register:hover,
+.DangKyMentor:hover {
+  opacity: 0.8;
+}
+.title,
+.small_title {
+  font-family: fontBWD;
+  font-weight: bold;
+  font-size: large;
+}
+.title .title_1,
+.title_2,
+.title_3 {
+  padding-top: 9px;
+}
+
+/* Phần nội dung chính */
+.Content {
+  display: flex;
+  padding: 20px;
+  padding-top: 0;
+  justify-content: space-around;
+}
+
+.title {
+  text-align: left;
+  width: 70%;
+  color: #fff; /* Màu chữ */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: fontBWD;
+  line-height: 2;
+}
+
+.DangKyMentor button {
+  padding: 15px 25px;
+  background: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));
+  color: #fff;
+  border: 2px solid;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  float: right;
+  /* transform: translateY(-50px); */
+  font-weight: bolder;
+}
+.ipad {
+  display: none;
+}
+/* Phần hướng dẫn 4 bước */
+.DangKy .Instruct {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.DangKy .Instruct button {
+  font-family: fontBWD;
+  padding: 20px 30px;
+  border: 2px solid;
+  color: whitesmoke;
+  font-size: 16px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(22, 167, 239),
+    rgb(148, 45, 212)
+  );
+  width: 150px;
+  height: auto; /* Đặt chiều cao của button là tự động để phù hợp với nội dung bên trong */
+}
+
+.Instruct p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.Instruct hr {
+  /* border: none; */
+  height: 1px;
+  color: linear-gradient(180deg, rgb(22, 167, 239), rgb(148, 45, 212));
+  margin: 10px 0;
+}
+
+/* Phần tìm kiếm Mentor */
+.findmentor {
+  padding: 20px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #46a4d2;
+}
+
+.findmentor .find {
+  padding: 16px 64px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: fontBWD;
+}
+
+.findmentor .EnterName {
+  width: 82%;
+  margin: 8px;
+  padding: 16px 64px;
+}
+
+.findmentor .title_4 {
+  height: auto;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-family: fontBWD;
+  font-size: 30px;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.findmentor .Khoa {
+  padding: 16px 64px;
+  margin: 8px 6px;
+}
+
+.findmentor .Ngành {
+  padding: 16px 64px;
+  margin: 8px 6px;
+}
+.findmentor .Môn {
+  padding: 16px 64px;
+  margin: 8px 6px;
+}
+/* Phần hình ảnh VKU Mentor */
+.ImageVkuMentor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.ImageVkuMentor button {
+  border: none;
+}
+
+.ImageVkuMentor img {
+  width: 100%;
+  height: auto;
+}
+/* Responsive smarthone */
+@media (max-width: 739px) {
+  /* .img__change {
+    width: 100%;
+  }
+  .container {
+    background-image: url(Images/bg.png);
+    background-position: center;
+    background-size: 700px 520px;
+  }
+  .Content {
+    display: block;
+    padding: 10px;
+    font-family: fontBWD;
+  }
+  .container .background .head {
+    padding-bottom: 7px;
+  }
+  #header {
+    max-width: 100%;
+    height: 26.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  #header .menu {
+    float: right;
+    color: whitesmoke;
+    line-height: 46.5px;
+    padding: 0px 22px;
+    display: none;
+  }
+  #nav li a {
+    text-decoration: none;
+    padding: 12px 20px;
+
+    color: black;
+  }
+  #nav .logo {
+    max-height: 20.5px;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #nav li:first-child {
+    display: inline-block;
+  }
+  #nav > li > a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 0 8px;
+    display: block;
+    margin-top: -4px;
+    font-size: 8px;
+    margin-bottom: 0px;
+  }
+
+  #nav .Login,
+  .Signup {
+    float: right;
+    height: auto;
+    width: 60px;
+    text-align: center;
+    padding-top: 0;
+    font-size: 60%;
+    transform: translate(-10px, 6px);
+  }
+  .ImageVkuMentor {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  .title {
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  .title .title_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    white-space: nowrap;
+    font-size: 10px;
+    flex-wrap: nowrap;
+    font-family: fontBWD;
+  }
+
+  .title .title_2 {
+    grid-column-start: 2;
+    font-size: 10px;
+    height: auto;
+    max-width: 100px;
+    white-space: nowrap;
+    font-family: fontBWD;
+  }
+  .title_3 {
+    grid-column-start: 3;
+    font-size: 10px;
+    font-family: fontBWD;
+    white-space: nowrap;
+  }
+
+  .small_title {
+    grid-column-start: 4;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 390px;
+    height: auto;
+    font-size: 11px;
+    font-family: fontBWD;
+    padding-right: 10px;
+    padding-left: 0px;
+  }
+
+  .DangKyMentor button {
+    max-width: 50%;
+    padding: 1px;
+    height: 0.8cm;
+    font-weight: 100;
+    float: left;
+    font-family: fontBWD;
+  }
+  .DangKy .Instruct {
+    float: right;
+  }
+  .DangKy .Instruct button {
+    float: right;
+    padding: 10px 10px;
+    max-width: 120px;
+    font-size: 10px;
+    height: auto;
+    font-family: fontBWD;
+  }
+
+  .Instruct p {
+    font-size: 10px;
+  }
+
+  .findmentor {
+    display: flex;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    height: 2cm;
+    gap: 10px;
+    align-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .findmentor .EnterName,
+  .Khoa,
+  .Môn,
+  .Ngành {
+    display: flex;
+    max-width: 2cm;
+    max-height: 0.7cm;
+    font-size: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    flex-grow: 1;
+  }
+
+  .findmentor .title_4 {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 15px;
+    white-space: nowrap;
+    width: 60px;
+  }
+  .findmentor .find {
+    max-height: 20px;
+    font-size: 12px;
+    align-self: center;
+  }*/
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .small_title {
+    display: none;
+  }
+  .DangKy .Instruct {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .findmentor {
+    display: grid;
+    padding: 10px;
+  }
+  .findmentor .EnterName {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .findmentor .Khoa,
+  .findmentor .Ngành,
+  .findmentor .Môn {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .ImageVkuMentor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  .findmentor .title_4 {
+    color: #8b56e9;
+  }
+  .DangKyMentor {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .ipad {
+    display: block;
+    padding: 16px 32px;
+  }
+  #header {
+    max-height: 32px;
+  }
+
+  #nav > li > a {
+    padding: 4px 8px;
+    margin-top: -8px;
+    margin-bottom: -7px;
+    font-size: 12px;
+  }
+  .container .background .head {
+    padding-bottom: 12px;
+  }
+  #nav .Login a {
+    color: black;
+    padding: 0, 12px;
+  }
+  #nav .Login,
+  .Signup {
+    height: 32px;
+    width: 60px;
+
+    padding-top: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .title {
+    margin-bottom: 32px;
+  }
+  .small_title {
+    display: none;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .findmentor {
+    display: block;
+    padding: 10px;
+    align-items: center;
+  }
+  .findmentor .EnterName {
+    margin-bottom: 16px;
+    width: 80%;
+    margin-left: 85px;
+  }
+  .findmentor .Khoa,
+  .findmentor .Ngành,
+  .findmentor .Môn {
+    margin-bottom: 16px;
+    width: 80%;
+    margin-left: 85px;
+  }
+  .findmentor .find {
+    margin-left: 36%;
+  }
+  .DangKy .Instruct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .ImageVkuMentor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  .findmentor .title_4 {
+    color: #8b56e9;
+  }
+  .DangKyMentor {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .ipad {
+    display: block;
+    padding: 16px 32px;
+  }
+  #header {
+    max-height: 32px;
+  }
+
+  #nav > li > a {
+    padding: 4px 8px;
+    margin-top: -8px;
+    margin-bottom: -7px;
+    font-size: 12px;
+  }
+  .container .background .head {
+    padding-bottom: 12px;
+  }
+  #nav .Login a {
+    color: black;
+    padding: 0, 12px;
+  }
+  #nav .Login,
+  .Signup {
+    height: 32px;
+    width: 60px;
+
+    padding-top: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
 .footer {
   width: auto;
   height: auto;
@@ -322,120 +736,29 @@ body {
     margin-top: 0px;
   }
 }
-
-@media only screen and (max-width: 900px) {  
-   .img__change{
-        width: 100%;
-        transform: translateY(-70px);
-    }
-    .container {
-        background-image: url(../img/bg.png);
-        background-position: center;
-        background-size: 700px 420px;
-    }
-    .Content {
-        display: block;
-        padding: 10px;
-    }
-    .login, .register {
-            padding: 10px 10px;
-            font-weight: 800;
-            font-size: 8px;
-            max-width: 1.7cm;
-            cursor: pointer;
-            margin-left: 10px; 
-            transform: translate(5px,-28px);
-           
-
-    }
-    
-    .head .img {
-        width: 90px;
-        height: 90px;
-        transform: translateY(-28px);
-    }
-    .title .title_1{
-        white-space: nowrap;
-        font-size: 10px;
-        font-weight: 50;
-        text-align: center;
-        transform: translate(-14px, -50px);
-        
-    }
-    
-     .title .title_2{
-        text-align: center;
-        font-size: 10px;
-        height: auto;
-        max-width: 100px;
-        font-weight: 50;
-        transform: translate(154px, -81px);
-        white-space: nowrap;
-    }
-    .title_3{
-        text-align: center;
-        font-size: 10px; 
-        font-weight: 50;
-        transform: translate(40px,-93px);
-    white-space: nowrap;
-    }
-
-    .small_title {
-        display: block;
-        align-items: center;
-        text-align: center;
-       justify-content: center;
-       position: absolute;  
-       width: 390px;
-       height: auto;
-        font-size: 11px;
-        transform: translateY(-90px);
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    
-   
-    .DangKyMentor button{
-        font-weight: 1300;
-        font-size: 8px;
-        max-width: auto;
-        padding-left: 1px;
-        padding-right: 1px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        height: 0.8cm;
-        font-weight: 100;
-        font-size:9px;
-        transform: translate(-130px,90px);
-        font-weight: bolder;
-        
-    }
-    .DangKy .Instruct {
-        float: right;
-        transform: translateY(-15px);
-    }
-   .DangKy .Instruct button {
-    float: right;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    max-width: 120px ;
-    font-size: 10px;
-    height: auto;
-   }
-
-    .Instruct p {
-        font-size: 10px;
-    }
-    .findmentor .EnterName, .Khoa, .Môn, .Ngành {
-        max-width: 2cm;
-        max-height: 0.7cm;
-        font-size: 8px;
-    }
-    .findmentor {
-        max-width: 100%;
-        height: auto;
-    }
-
+@media (max-width: 992px) {
+  .navbar .links {
+    display: none;
+  }
+  .navbar {
+    display: none;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar .action_btn {
+    display: none;
+  }
+  .navbar .toggle_btn {
+    display: block;
+    margin: 0px 16px;
+    margin-top: -8px;
+    padding: 16px;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+  .logo {
+    display: block;
+  }
 }

@@ -1,10 +1,11 @@
-const dangKyBtn = document.querySelector('.DangKyMentor')
-const form = document.querySelector('.overlay-container')
-const closeForm = document.querySelector('.icon__close i')
-const formfull = document.querySelector('.wrapp')
-dangKyBtn.addEventListener('click',()=>{
-    form.style.display= `block`
-})
-closeForm.onclick= function(){
-    form.style.display= `none`
+const  toggleBtn = document.querySelector('.toggle_btn')
+const  toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropMenu = document.querySelector('.dropdown_menu')
+toggleBtn.onclick= function(){
+    dropMenu.classList.toggle('open')
+    const isOpen = dropMenu.classList.contains('open')
+
+    toggleBtnIcon.classList=isOpen
+    ?'fa-solid fa-xmark'
+    :'fa-solid fa-bars'
 }
