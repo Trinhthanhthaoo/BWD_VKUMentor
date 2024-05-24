@@ -718,6 +718,12 @@ body {
   margin-right: 32px;
   list-style: none;
 }
+
+.b24-widget-button-wrapper {
+  right: 20px !important;
+  bottom: 100px !important;
+}
+
 @media (max-width: 739px) {
   .footer {
     text-align: center;
