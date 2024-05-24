@@ -56,7 +56,7 @@ body {
 .footer button {
   padding: 10px;
   width: 100%; 
-  background-color: rgba(255, 0, 0, 0.5); 
+  background-color: rgba(246, 62, 62, 0.5); 
 }
 
 .tttt-1024-form-group {
@@ -94,4 +94,67 @@ body {
       width: 100%; 
       margin-left: 0;
   }
+}
+
+.image-input {
+    text-align: center;
+}
+
+.image-input input {
+    display: none;
+}
+
+.image-input label {
+    display: block;
+    color: #FFF;
+    background: #5c95b8;
+    padding: .3rem .6rem;
+    font-size: 115%;
+    cursor: pointer;
+}
+
+.image-input label i {
+    font-size: 125%;
+    margin-right: .3rem;
+}
+
+.image-input label:hover i {
+    animation: shake .35s;
+}
+
+.image-input img {
+    max-width: 175px;
+    display: none;
+}
+
+.image-input span {
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjusted to fill the viewport height */
+    font-family: Calibri, sans-serif; /* Added fallback font */
 }
