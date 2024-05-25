@@ -1,3 +1,5 @@
+// header 
+
 const  toggleBtn = document.querySelector('.toggle_btn')
 const  toggleBtnIcon = document.querySelector('.toggle_btn i')
 const dropMenu = document.querySelector('.dropdown_menu')
@@ -9,6 +11,10 @@ toggleBtn.onclick= function(){
     ?'fa-solid fa-xmark'
     :'fa-solid fa-bars'
 }
+
+// slider  
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -154,7 +160,50 @@ function slide(event){
 }
 
 
+
+
 arrow_left.addEventListener("click", slide)
 arrow_right.addEventListener("click", slide)
 
+// fomr dk 
 
+
+// Get the modal
+var modal = document.getElementById("mentorModal");
+
+// Get the button that opens the modal
+var btn = document.querySelectorAll(".DangKyMentor button");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-btn")[0];
+
+// When the user clicks the button, open the modal 
+btn.forEach(button => {
+  button.onclick = function() {
+    modal.style.display = "block";
+  }
+});
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    header.classList.add("active");
+    backTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    backTopBtn.classList.remove("active");
+  }
+});

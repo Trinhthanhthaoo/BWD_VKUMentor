@@ -213,7 +213,7 @@ body {
 }
 .content_left .content_left_content li {
   list-style-type: circle;
-  margin: 10px;
+  margin: 20px;
 }
 .TTTT_Center {
   grid-area: TTTT_Center;
@@ -253,7 +253,7 @@ body {
 }
 .content_right .content_right_content li {
   list-style-type: circle;
-  margin: 10px;
+  margin: 20px;
 }
 .TTTT_footer {
   grid-area: TTTT_footer;
