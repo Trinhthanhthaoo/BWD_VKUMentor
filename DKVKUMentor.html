@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Ký Mentor</title>
-    <link rel="stylesheet" href="assets/css/DangKy.css">
+    <link rel="stylesheet" href="assets/css/DKVKU.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <!-- Header -->
+    <div id="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./TrangChuMentor.html"><img src="./assets/img/logo.png" alt="" /></a>
+            </div>
+            <ul class="links">
+                <a href="#"><li>Trang chủ</li></a>
+                <a href="#dangnhapmentor"><li>Đăng ký Mentor</li></a>
+                <a href="#timkiem"><li>Tìm kiếm Mentor</li></a>
+                <a href="#"><li>Cộng đồng</li></a>
+                <a href="#"><li>Đánh giá</li></a>
+                <a href="#picassoFooter"><li>Liên Hệ</li></a>
+            </ul>
+            <a class="action_btn" href="./Login.html"> BẮT ĐẦU </a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- Dropnav -->
+            <div class="dropdown_menu">
+                <li><a href="./TrangChuMentor.html"><img class="logo__header" src="./assets/img/logo.png" alt="" /></a></li>
+                <li><a href="#"><li>Trang chủ</li></a></li>
+                <li><a href="#dangnhapmentor"><li>Đăng ký Mentor</li></a></li>
+                <li><a href="#timkiem"><li>Tìm kiếm Mentor</li></a></li>
+                <li><a href="#"><li>Cộng đồng</li></a></li>
+                <li><a href="#"><li>Đánh giá</li></a></li>
+                <li><a href="#picassoFooter"><li>Liên Hệ</li></a></li>
+                <li><a class="action_btn2" href="./Login.html">BẮT ĐẦU</a></li>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <div class="wrapp">
         <div class="header">
             <div class="subject">
@@ -25,12 +58,11 @@
         <form action="index.php" method="POST">
             <div class="container">
                 <div class="tttt-1024-form-group">
-                    <div class="form-group" > 
+                    <div class="form-group">
                         <div class="label">Họ và Tên</div>
                         <input type="text" placeholder="Nhập Họ và Tên" required>
-                        
                     </div>
-                    <div class="form-group" > 
+                    <div class="form-group">
                         <div class="label">Danh xưng</div>
                         <select name="DanhXung" required>
                             <option>Anh</option>
@@ -38,98 +70,82 @@
                         </select>
                     </div>
                 </div>
-
                 <div class="tttt-1024-form-group">
-                    <div class="form-group" > 
+                    <div class="form-group">
                         <div class="label">Công việc/Vị trí</div>
                         <input type="text" placeholder="Nhập công việc của bạn" required>
-
                     </div>
-
-                    <div class="form-group" > 
-                    <div class="label" >Công ty/Tổ chức</div>
+                    <div class="form-group">
+                        <div class="label">Công ty/Tổ chức</div>
                         <input type="text" placeholder="Nhập tên công ty" required>
                     </div>
                 </div>
-
                 <div class="tttt-1024-form-group">
-                    <div class="form-group" > 
+                    <div class="form-group">
                         <div class="label">Email</div>
                         <input type="email" placeholder="example@gmail.com" required>
-
                     </div>
-
-                    <div class="form-group" > 
-                        <div class="label" >Số điện thoại</div>                   
+                    <div class="form-group">
+                        <div class="label">Số điện thoại</div>
                         <input type="number" placeholder="Nhập số điện thoại" min="0" required>
                     </div>
                 </div>
-
                 <div class="tttt-1024-form-group">
-                    <div class="form-group"> 
+                    <div class="form-group">
                         <div class="label">Link Facebook</div>
-<input type="url" placeholder="https://facebook.com/yourprofile">
+                        <input type="url" placeholder="https://facebook.com/yourprofile">
                     </div>
-
-                    <div class="form-group" >
-                        <div class="label"  >Zalo</div>
+                    <div class="form-group">
+                        <div class="label">Zalo</div>
                         <input type="phone" placeholder="Nhập số Zalo của bạn">
                     </div>
                 </div>
-
                 <div class="tttt-1024-form-group">
-                    <div class="form-group"> 
-                         <div class="label">Chuyên môn</div>
+                    <div class="form-group">
+                        <div class="label">Chuyên môn</div>
                         <input type="text" placeholder="Nhập chuyên môn của bạn" required>
                     </div>
-
-                    <div class="form-group" >
-                        <div class="label"  >Tổ chức</div> 
+                    <div class="form-group">
+                        <div class="label">Tổ chức</div>
                         <input type="text" placeholder="Nhập tên tổ chức">
                     </div>
                 </div>
-
                 <div class="tttt-1024-form-group">
                     <div class="form-group">
                         <div class="label">Địa điểm</div>
                         <input type="text" placeholder="Nhập địa điểm của bạn">
-
                     </div>
-
-                    <div class="form-group"> 
-                        <div class="label"  >Link LinkedIn</div>
+                    <div class="form-group">
+                        <div class="label">Link LinkedIn</div>
                         <input type="url" placeholder="https://linkedin.com/yourprofile">
                     </div>
                 </div>
                 <div class="tttt-1024-form-group">
-                    <div class="form-group"> 
+                    <div class="form-group">
                         <div class="label">Upload ảnh chân dung</div>
                         <div class="image-input">
                             <input type="file" accept="image/*" id="imageInput">
                             <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
                             <img src="" class="image-preview" id="imagePreview">
                             <span class="change-image" id="changeImage">Choose different image</span>
-                        </div>        
+                        </div>
                     </div>
-
-                    <div class="form-group"> 
+                    <div class="form-group">
                         <div class="label">CV</div>
                         <div class="image-input">
                             <input type="file" accept="application/pdf" id="cvInput">
                             <label for="cvInput" class="image-button"><i class="far fa-image"></i> Choose CV</label>
                             <img src="" class="image-preview" id="cvPreview">
                             <span class="change-image" id="changeCV">Choose different CV</span>
-                        </div> 
+                        </div>
                     </div>
                 </div>
-
                 <div class="tttt-1024-form-group">
-                    <div class="form-group" > 
+                    <div class="form-group">
                         <div class="label">Bạn biết VKUMentor qua</div>
                         <input type="text" placeholder="Bạn biết VKUMentor qua ai?">
                     </div>
-
-                    <div class="form-group" > 
+                    <div class="form-group">
                         <div class="label">Câu hỏi góp ý</div>
                         <input type="text" placeholder="Bạn có câu hỏi hoặc góp ý nào?">
                     </div>
@@ -138,54 +154,43 @@
                     <div class="label">Một số thành tựu</div>
                     <input type="text">
                 </div>
-
                 <div class="footer">
                     <button type="submit">Hoàn thành</button>
                 </div>
             </div>
         </form>
-        
     </div>
-       
-    <script>
-        $(document).ready(function() {
-            $('#imageInput').on('change', function() {
-                let $input = $(this);
-                if($input.val().length > 0) {
-                    let fileReader = new FileReader();
-                    fileReader.onload = function(data) {
-                        $('#imagePreview').attr('src', data.target.result).css('display', 'block');
-                    }
-                    fileReader.readAsDataURL($input.prop('files')[0]);
-                    $input.siblings('.image-button').css('display', 'none');
-                    $input.siblings('.change-image').css('display', 'block');
-                }
-            });
-                            
-            $('#changeImage').on('click', function() {
-                let $control = $(this);
-                $('#imageInput').val('');
-                $('#imagePreview').attr('src', '').css('display', 'none');
-                $control.css('display', 'none');
-                $control.siblings('.image-button').css('display', 'block');
-            });
 
-            // Add similar functionality for CV if needed
-            $('#cvInput').on('change', function() {
-                let $input = $(this);
-                if($input.val().length > 0) {
-                    // Handle CV file preview if needed
-                }
-            });
+    <!-- Footer -->
+    <footer class="lg:h-screen flex items-end justify-center">
+        <div class="w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+            <div class="container pt-14">
+                <div class="bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-red-900 via-violet-200 to-orange-500 py-14 px-10 rounded-2xl">
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+                        <div>
+                            <h1 class="text-white text-4xl">Grow your business on CodePen. Your ultimate productivity tool</h1>
+                        </div>
+                        <div class="relative flex items-center justify-end">
+                            <div class="py-4 px-4 bg-black rounded-lg">
+                                <p class="text-white">Try 14 Days FREE</p>
+                            </div>
+                            <div class="bg-white absolute w-[30px] h-[30px] rotate-45 right-3 bg-black"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-10 flex justify-between items-center">
+                    <div>
+                        <p class="text-white text-[16px]">&copy; CodePen - A <span class="text-[16px] text-red-500 font-semibold">Brad</span> Company</p>
+                    </div>
+                    <div>
+                        <p class="text-[16px] text-white">Term | Privacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-            $('#changeCV').on('click', function() {
-                let $control = $(this);
-                $('#cvInput').val('');
-                // Handle reset for CV file preview if needed
-                $control.css('display', 'none');
-                $control.siblings('.image-button').css('display', 'block');
-            });
-        });
-    </script>
+    <script src="https://kit.fontawesome.com/3f3a647359.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/DangKy.js"></script>
 </body>
 </html>
