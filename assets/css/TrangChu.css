@@ -644,22 +644,22 @@ body {
 /* Sections */
 
 #hero1 {
-  background: url(../img/bg2.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  /* background: url(../img/bg2.jpg); */
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* background-attachment: fixed; */
 }
 #hero2 {
-  background: url(/assets/img/bg8.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  /* background: url(/assets/img/bg8.jpg); */
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* background-attachment: fixed; */
 }
 #hero3 {
-  background: url(/assets/img/bg4.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  /* background: url(/assets/img/bg4.jpg); */
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* background-attachment: fixed; */
 }
 
 .hero,
@@ -668,12 +668,62 @@ body {
   width: 100%;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .inner {
-  margin: 0 auto;
+  /* margin: 0 auto;
   min-height: 710px;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: left; */
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+  .inner {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inner {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .inner {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inner {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .inner {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .inner {
+    height: 350px;
+  }
 }
 
 .copy.slide-tekst {
